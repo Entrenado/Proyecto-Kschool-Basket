@@ -52,7 +52,7 @@ def leo_jugadores(url):
         return data
     except:
         print 'ha ocurrido un error leyendo la página %s revisa si existe'%url
-f1 =open('D:\\Master\\ProyectoBasket\\fichero.csv', 'w') 
+f1 =open('D:\\Master\\ProyectoBasket\\Proyecto-Kschool-Basket\\fichero.csv', 'w') 
         
 for j in lista_url_jugadores:
     data = leo_jugadores(j)
