@@ -18,7 +18,6 @@ def extraigo_datos_jugador(req):
     '''
     html = urlopen(url)
     bsObj = BeautifulSoup(html)
-   # table = bsObj.find("table", { "class" : "tabledades" })
     Nombre = bsObj.find("td", text="Nombre:").find_next_sibling("td").text
     FNacimiento = bsObj.find("td", text="Fecha de nacimiento:").find_next_sibling("td").text
     LNacimiento = bsObj.find("td", text="Lugar de nacimiento:").find_next_sibling("td").text
@@ -26,6 +25,10 @@ def extraigo_datos_jugador(req):
     Altura = bsObj.find("td", text="Altura:").find_next_sibling("td").text
     Puesto = bsObj.find("td", text="Demarcación:").find_next_sibling("td").text
     datos_jugador=[Nombre,FNacimiento, LNacimiento, Pais, Altura, Puesto]    
+    table = bsObj.find("table", { "class" : "taulabdf traject" })
+
+
+    
     return datos_jugador
 
 
