@@ -1,0 +1,490 @@
+temporada,equipo,puesto,PJ,PG,PP,PF,PC
+15-16,FC Barcelona Lassa,1,34,29,5,2835,2384
+15-16,Real Madrid,2,34,29,5,3229,2767
+15-16,Valencia Basket Club,3,34,28,6,2831,2501
+15-16,Laboral Kutxa Baskonia,4,34,24,10,2987,2703
+15-16,Herbalife Gran Canaria,5,34,21,13,2818,2705
+15-16,Unicaja,6,34,20,14,2637,2508
+15-16,UCAM Murcia CB,7,34,18,16,2683,2663
+15-16,Montakit Fuenlabrada,8,34,17,17,2793,2854
+15-16,Iberostar Tenerife,9,34,16,18,2610,2708
+15-16,Dominion Bilbao Basket,10,34,16,18,2647,2726
+15-16,Baloncesto Sevilla,11,34,14,20,2662,2873
+15-16,CAI Zaragoza,12,34,13,21,2719,2777
+15-16,FIATC Joventut,13,34,13,21,2634,2783
+15-16,MoraBanc Andorra,14,34,12,22,2744,2827
+15-16,Rio Natura Monbus Obradoiro,15,34,10,24,2564,2685
+15-16,ICL Manresa,16,34,10,24,2383,2669
+15-16,Movistar Estudiantes,17,34,9,25,2564,2789
+15-16,RETAbet.es GBC,18,34,7,27,2477,2895
+05-06,Unicaja,1,34,26,8,2753,2512
+05-06,TAU Cer\xe1mica,2,34,25,9,2855,2607
+05-06,Winterthur F.C. Barcelona,3,34,24,10,2747,2551
+05-06,DKV Joventut,4,34,23,11,2834,2645
+05-06,Gran Canaria Grupo Dunas,5,34,20,14,2568,2493
+05-06,Real Madrid,6,34,19,15,2640,2485
+05-06,Akasvayu Girona,7,34,18,16,2739,2701
+05-06,Adecco Estudiantes,8,34,17,17,2770,2832
+05-06,Pamesa Valencia,9,34,16,18,2638,2693
+05-06,Alta Gesti\xf3n Fuenlabrada,10,34,15,19,2621,2706
+05-06,Caja San Fernando,11,34,14,20,2662,2764
+05-06,Etosa Alicante,12,34,14,20,2574,2639
+05-06,C.B. Granada,13,34,14,20,2620,2755
+05-06,F\xf3rum Valladolid,14,34,13,21,2706,2767
+05-06,Lagun Aro Bilbao Basket,15,34,13,21,2534,2672
+05-06,Llanera Menorca,16,34,12,22,2600,2772
+05-06,Ricoh Manresa,17,34,12,22,2599,2722
+05-06,Leche R\xedo,18,34,11,23,2580,2724
+95-96,F.C. Barcelona Banca Catalana,1,38,30,8,3399,3077
+95-96,Real Madrid,2,38,28,10,3243,2950
+95-96,Unicaja,3,38,26,12,3173,2975
+95-96,Estudiantes Argentaria,4,38,25,13,3250,3050
+95-96,Amway Zaragoza,5,38,25,13,3346,3231
+95-96,Tdk Manresa,6,38,24,14,3094,2953
+95-96,Caja San Fernando,7,38,23,15,3242,3106
+95-96,Taugr\xe9s,8,38,21,17,3287,3181
+95-96,Baloncesto Salamanca,9,38,19,19,3032,3078
+95-96,C\xe1ceres C.B.,10,38,19,19,3281,3213
+95-96,Valvi Girona,11,38,19,19,3147,3089
+95-96,Baloncesto Le\xf3n,12,38,18,20,3009,3041
+95-96,Joventut Badalona,13,38,17,21,3076,3151
+95-96,C.B. Gran Canaria,14,38,16,22,3180,3278
+95-96,F\xf3rum Valladolid,15,38,15,23,3036,3160
+95-96,C.B. Murcia,16,38,15,23,2963,3102
+95-96,Xacobeo 99 Ourense,17,38,13,25,3044,3301
+95-96,Festina Andorra,18,38,10,28,3016,3278
+95-96,Grupo Agb Huesca,19,38,9,29,3176,3436
+95-96,Gij\xf3n Baloncesto,20,38,8,30,2893,3237
+14-15,Real Madrid,1,34,27,7,2903,2640
+14-15,FC Barcelona,2,34,25,9,2806,2455
+14-15,Unicaja,3,34,25,9,2738,2583
+14-15,Bilbao Basket,4,34,20,14,2652,2608
+14-15,Valencia Basket Club,5,34,20,14,2817,2675
+14-15,Laboral Kutxa Baskonia,6,34,19,15,2834,2669
+14-15,FIATC Joventut,7,34,19,15,2652,2624
+14-15,Herbalife Gran Canaria,8,34,18,16,2638,2636
+14-15,CAI Zaragoza,9,34,18,16,2584,2643
+14-15,UCAM Murcia,10,34,17,17,2621,2660
+14-15,Iberostar Tenerife,11,34,16,18,2651,2619
+14-15,Rio Natura Monbus Obradoiro,12,34,15,19,2467,2535
+14-15,Movistar Estudiantes,13,34,14,20,2509,2615
+14-15,MoraBanc Andorra,14,34,12,22,2549,2615
+14-15,Baloncesto Sevilla,15,34,12,22,2539,2743
+14-15,"Or Manresa""]",16,34,11,23,2456,2672
+14-15,Gipuzkoa Basket,17,34,10,24,2409,2648
+14-15,Montakit Fuenlabrada,18,34,8,26,2533,2718
+04-05,TAU Cer\xe1mica,1,34,28,6,3106,2692
+04-05,Real Madrid,2,34,26,8,2720,2457
+04-05,Winterthur F.C. Barcelona,3,34,24,10,2723,2579
+04-05,Etosa Alicante,4,34,23,11,2813,2629
+04-05,Unicaja,5,34,23,11,2775,2531
+04-05,Adecco Estudiantes,6,34,21,13,2915,2773
+04-05,DKV Joventut,7,34,20,14,2840,2719
+04-05,Gran Canaria,8,34,19,15,2539,2446
+04-05,Pamesa Valencia,9,34,18,16,2950,2893
+04-05,Caja San Fernando,10,34,14,20,2786,2841
+04-05,Leche R\xedo,11,34,13,21,2814,2889
+04-05,F\xf3rum Valladolid,12,34,13,21,2677,2868
+04-05,C.B. Granada,13,34,12,22,2632,2881
+04-05,Ricoh Manresa,14,34,12,22,2649,2783
+04-05,Lagun Aro Bilbao Basket,15,34,12,22,2634,2801
+04-05,Casademont Girona,16,34,11,23,2786,2996
+04-05,Unelco Tenerife,17,34,9,25,2447,2763
+04-05,Plus Pujol Lleida,18,34,8,26,2667,2932
+94-95,F.C. Barcelona Banca Catalana,1,38,30,8,3219,2937
+94-95,Unicaja,2,38,25,13,3166,3031
+94-95,Taugr\xe9s,3,38,23,15,3291,3170
+94-95,Real Madrid Teka,4,38,23,15,3090,2875
+94-95,Amway Zaragoza,5,38,23,15,3381,3311
+94-95,Tdk Manresa,6,38,21,17,2943,2875
+94-95,Estudiantes Caja Postal,7,38,20,18,3201,3129
+94-95,Festina Andorra,8,38,20,18,3035,3048
+94-95,Baloncesto Le\xf3n,9,38,19,19,2942,2894
+94-95,Caja San Fernando,10,38,19,19,3040,3033
+94-95,F\xf3rum Valladolid,11,38,19,19,3162,3182
+94-95,C. Baloncesto Murcia,12,38,18,20,3239,3271
+94-95,C\xe1ceres C.B.,13,38,17,21,2970,3043
+94-95,7Up Joventut,14,38,17,21,2938,3014
+94-95,Coren Orense,15,38,17,21,3018,3125
+94-95,Baloncesto Salamanca,16,38,17,21,2881,2947
+94-95,Pamesa Valencia,17,38,15,23,3060,3140
+94-95,Valvi Girona,18,38,15,23,2886,2967
+94-95,Somontano Huesca,19,38,12,26,2937,3138
+94-95,Breog\xe1n Lugo,20,38,10,28,2942,3211
+13-14,Real Madrid,1,34,32,2,3001,2480
+13-14,Valencia Basket Club,2,34,30,4,2930,2554
+13-14,Barcelona,3,34,27,7,2785,2382
+13-14,Unicaja,4,34,23,11,2745,2467
+13-14,Herbalife Gran Canaria,5,34,22,12,2595,2430
+13-14,Laboral Kutxa,6,34,19,15,2777,2702
+13-14,Cajasol,7,34,18,16,2543,2545
+13-14,CAI Zaragoza,8,34,18,16,2647,2591
+13-14,FIATC Joventut,9,34,16,18,2655,2658
+13-14,Gipuzkoa Basket,10,34,16,18,2417,2443
+13-14,Iberostar Tenerife,11,34,14,20,2644,2739
+13-14,Rio Natura Monbus,12,34,13,21,2548,2624
+13-14,UCAM Murcia,13,34,12,22,2661,2866
+13-14,Bilbao Basket,14,34,12,22,2692,2751
+13-14,Baloncesto Fuenlabrada,15,34,12,22,2580,2768
+13-14,Tuenti Movil Estudiantes,16,34,12,22,2569,2682
+13-14,"Or Manresa""]",17,34,7,27,2464,2888
+13-14,Valladolid,18,34,3,31,2392,3075
+03-04,TAU Cer\xe1mica,1,34,28,6,2964,2668
+03-04,Pamesa C Valencia,2,34,23,11,2841,2659
+03-04,F.C. Barcelona,3,34,23,11,2606,2462
+03-04,Unicaja,4,34,20,14,2621,2623
+03-04,Adecco Estudiantes,5,34,20,14,2750,2642
+03-04,Real Madrid,6,34,20,14,2846,2727
+03-04,Auna G. Canaria,7,34,17,17,2551,2529
+03-04,DKV Joventut,8,34,16,18,2829,2759
+03-04,Ricoh Manresa,9,34,16,18,2707,2697
+03-04,Unelco Tenerife,10,34,16,18,2651,2715
+03-04,F\xf3rum Valladolid,11,34,16,18,2798,2844
+03-04,Caja San Fernando,12,34,15,19,2708,2684
+03-04,Casademont Girona,13,34,15,19,2735,2785
+03-04,Etosa Alicante,14,34,14,20,2558,2633
+03-04,Leche R\xedo,15,34,14,20,2714,2818
+03-04,Caprabo Lleida,16,34,13,21,2673,2790
+03-04,Jabones Pardo Fuenlabrada,17,34,13,21,2704,2932
+03-04,Polaris World CB Murcia,18,34,7,27,2565,2854
+93-94,Real Madrid Teka,1,28,24,4,2473,2164
+93-94,F.C. Barcelona Banca Catalana,2,28,21,7,2453,2314
+93-94,Tdk Manresa,3,28,19,9,2219,2207
+93-94,7Up Joventut,4,28,18,10,2304,2071
+93-94,Festina Andorra,5,28,18,10,2392,2223
+93-94,Estudiantes Caja Postal,6,28,17,11,2249,2155
+93-94,Taugr\xe9s,7,28,16,12,2377,2289
+93-94,C\xe1ceres C.B.,8,28,15,13,2331,2328
+93-94,Caja San Fernando,9,28,14,14,2362,2356
+93-94,Pamesa Valencia,10,28,14,14,2276,2337
+93-94,Elmar Le\xf3n,11,28,13,15,2360,2390
+93-94,Unicaja Polti,12,28,12,16,2256,2285
+93-94,Coren Orense,13,28,12,16,2119,2212
+93-94,Banco Natwest Zaragoza,14,28,11,17,2283,2371
+93-94,C. Baloncesto Oar,15,28,11,17,2126,2134
+93-94,Dyc Lugo,16,28,10,18,2092,2238
+93-94,F\xf3rum Valladolid,17,28,9,19,2395,2504
+93-94,Argal Huesca,18,28,9,19,2327,2456
+93-94,Valvi Girona,19,28,9,19,2204,2371
+93-94,C.B. Murcia,20,28,8,20,2108,2301
+12-13,Real Madrid,1,34,30,4,2985,2563
+12-13,Caja Laboral,2,34,25,9,2815,2695
+12-13,Regal FC Barcelona,3,34,23,11,2693,2436
+12-13,Valencia Basket Club,4,34,22,12,2764,2579
+12-13,CAI Zaragoza,5,34,21,13,2692,2460
+12-13,Herbalife Gran Canaria,6,34,19,15,2491,2416
+12-13,Gescrap Bizkaia,7,34,19,15,2762,2665
+12-13,Blusens Monbus,8,34,18,16,2556,2507
+12-13,Unicaja,9,34,18,16,2481,2475
+12-13,CB Canarias,10,34,17,17,2746,2806
+12-13,FIATC Joventut,11,34,16,18,2653,2738
+12-13,Asefa Estudiantes,12,34,15,19,2712,2704
+12-13,UCAM Murcia,13,34,13,21,2691,2888
+12-13,Mad-Croc Fuenlabrada,14,34,12,22,2530,2695
+12-13,Cajasol,15,34,12,22,2448,2606
+12-13,Blancos de Rueda Valladolid,16,34,12,22,2644,2838
+12-13,Lagun Aro GBC,17,34,8,26,2492,2750
+12-13,Assignia Manresa,18,34,6,28,2574,2908
+02-03,F.C. Barcelona,1,34,27,7,2792,2588
+02-03,Pamesa Valencia,2,34,26,8,2815,2524
+02-03,Unicaja,3,34,24,10,2663,2567
+02-03,Adecco Estudiantes,4,34,23,11,2870,2605
+02-03,Auna,5,34,21,13,2834,2713
+02-03,TAU Cer\xe1mica,6,34,18,16,2763,2665
+02-03,DKV Joventut,7,34,18,16,2849,2753
+02-03,Lucentum Alicante,8,34,18,16,2745,2716
+02-03,Leche Rio Breogan,9,34,17,17,2769,2830
+02-03,Real Madrid,10,34,17,17,2667,2608
+02-03,Caprabo Lleida,11,34,16,18,2730,2819
+02-03,Caja San Fernando,12,34,16,18,2722,2687
+02-03,Ricoh Manresa,13,34,15,19,2692,2757
+02-03,Jabones Pardo Fuenlabrada,14,34,14,20,2740,2881
+02-03,Casademont Girona,15,34,12,22,2623,2790
+02-03,F\xf3rum Valladolid,16,34,11,23,2625,2789
+02-03,Caceres Cb,17,34,8,26,2683,2930
+02-03,C.B. Granada,18,34,5,29,2584,2944
+92-93,Real Madrid Teka,1,31,25,6,2531,2287
+92-93,Marbella Joventut,2,31,24,7,2621,2332
+92-93,F.C. Barcelona Banca Catalana,3,31,23,8,2670,2485
+92-93,Estudiantes Caja Postal,4,31,21,10,2510,2403
+92-93,Caja San Fernando,5,31,19,12,2641,2473
+92-93,Unicaja Mayoral,6,31,19,12,2481,2484
+92-93,Valencia Basket,7,31,18,13,2454,2451
+92-93,Elos\xfaa Le\xf3n,8,31,17,14,2683,2557
+92-93,Taugr\xe9s,9,31,17,14,2610,2540
+92-93,Banco Natwest Zaragoza,10,31,16,15,2310,2310
+92-93,Coren Orense,11,31,15,16,2450,2476
+92-93,Festina Andorra,12,31,15,16,2345,2349
+92-93,Tdk Manresa,13,31,15,16,2416,2489
+92-93,Bfi Granollers,14,31,13,18,2483,2554
+92-93,Oar Pescanova Ferrol,15,31,12,19,2307,2483
+92-93,Valvi Girona,16,31,12,19,2458,2550
+92-93,Dyc Breog\xe1n,17,31,12,19,2591,2619
+92-93,Grupo Libro Valladolid,18,31,11,20,2412,2542
+92-93,Argal Huesca,19,31,11,20,2488,2574
+92-93,Club Basket Ferrys Lliria,20,31,10,21,2417,2545
+92-93,C\xe1ceres C.B.,21,31,9,22,2365,2470
+92-93,C.B. Juver Murcia,22,31,7,24,2260,2530
+11-12,Regal FC Barcelona,1,34,29,5,2639,2232
+11-12,Real Madrid,2,34,26,8,2829,2513
+11-12,Caja Laboral,3,34,23,11,2545,2384
+11-12,Valencia Basket,4,34,20,14,2531,2401
+11-12,Gescrap Bizkaia,5,34,19,15,2642,2615
+11-12,Lagun Aro GBC,6,34,19,15,2664,2578
+11-12,Cajasol Banca Civica,7,34,18,16,2523,2460
+11-12,Lucentum Alicante,8,34,18,16,2352,2439
+11-12,Unicaja,9,34,17,17,2509,2562
+11-12,FIATC Mutua Joventut,10,34,16,18,2493,2562
+11-12,CAI Zaragoza,11,34,16,18,2404,2454
+11-12,Assignia Manresa,12,34,15,19,2497,2559
+11-12,Blusens Monbus,13,34,13,21,2405,2481
+11-12,Gran Canaria 2014,14,34,13,21,2268,2395
+11-12,UCAM Murcia,15,34,13,21,2439,2512
+11-12,Mad-Croc Fuenlabrada,16,34,12,22,2414,2585
+11-12,Asefa Estudiantes,17,34,11,23,2394,2573
+11-12,Blancos de Rueda Valladolid,18,34,8,26,2349,2592
+01-02,Unicaja,1,34,27,7,2782,2455
+01-02,F.C. Barcelona,2,34,27,7,2960,2687
+01-02,TAU Cer\xe1mica,3,34,24,10,2764,2429
+01-02,Real Madrid,4,34,24,10,2818,2577
+01-02,Pamesa Valencia,5,34,21,13,2681,2534
+01-02,Adecco Estudiantes,6,34,20,14,2933,2771
+01-02,Jabones Pardo Fuenlabrada,7,34,19,15,2675,2709
+01-02,Caprabo Lleida,8,34,19,15,2764,2745
+01-02,DKV Joventut,9,34,18,16,2858,2824
+01-02,F\xf3rum Valladolid,10,34,17,17,2753,2738
+01-02,Casademont Girona,11,34,17,17,2587,2671
+01-02,Caja San Fernando,12,34,14,20,2608,2613
+01-02,Leche R\xedo Breog\xe1n,13,34,13,21,2530,2731
+01-02,C.B. Granada,14,34,12,22,2809,2943
+01-02,C\xe1ceres C.B.,15,34,11,23,2655,2933
+01-02,Canarias Telecom,16,34,10,24,2560,2786
+01-02,Cantabria Lobos,17,34,7,27,2623,2942
+01-02,Gij\xf3n Baloncesto,18,34,6,28,2564,2836
+91-92,Montigal\xe1 Joventut,1,34,26,8,2885,2522
+91-92,Elos\xfaa Le\xf3n,2,34,25,9,2760,2558
+91-92,CAI Zaragoza,3,34,25,9,2760,2462
+91-92,Real Madrid Asegurator,4,34,24,10,2902,2656
+91-92,Estudiantes Caja Postal,5,34,24,10,2828,2660
+91-92,F.C. Barcelona,6,34,24,10,2745,2517
+91-92,Taugr\xe9s,7,34,24,10,2759,2565
+91-92,F\xf3rum Filat\xe9lico Valaldolid,8,34,21,13,2755,2588
+91-92,Pamesa Valencia,9,34,18,16,2640,2595
+91-92,Huesca La Magia,10,34,18,16,2709,2756
+91-92,Oar Ferrol,11,34,17,17,2600,2616
+91-92,Juver Murcia,12,34,16,18,2680,2715
+91-92,Valvi Girona,13,34,16,18,2668,2671
+91-92,Granollers E.B.,14,34,16,18,2769,2749
+91-92,Tdk Manresa,15,34,15,19,2546,2540
+91-92,Caja San Fernando,16,34,14,20,2588,2704
+91-92,Unicaja Ronda,17,34,13,21,2455,2527
+91-92,Mayoral Maristas,18,34,12,22,2698,2847
+91-92,Dyc Breog\xe1n,19,34,12,22,2563,2655
+91-92,Ferrys Lliria,20,34,11,23,2440,2676
+91-92,Gran Canaria,21,34,10,24,2413,2656
+91-92,Coren Orense,22,34,10,24,2433,2775
+91-92,Granada,23,34,9,25,2581,2805
+91-92,C.B. Collado Villalba,24,34,8,26,2578,2940
+10-11,Regal FC Barcelona,1,34,27,7,2614,2245
+10-11,Real Madrid,2,34,26,8,2629,2401
+10-11,Power Electronics Valencia,3,34,24,10,2570,2414
+10-11,Caja Laboral,4,34,23,11,2693,2509
+10-11,Gran Canaria 2014,5,34,21,13,2560,2450
+10-11,Bizkaia Bilbao Basket,6,34,21,13,2643,2514
+10-11,Baloncesto Fuenlabrada,7,34,20,14,2611,2580
+10-11,Unicaja,8,34,19,15,2582,2461
+10-11,Blancos de Rueda Valladolid,9,34,18,16,2465,2462
+10-11,CAI Zaragoza,10,34,16,18,2551,2641
+10-11,Cajasol,11,34,16,18,2513,2499
+10-11,Asefa Estudiantes,12,34,16,18,2476,2540
+10-11,DKV Joventut,13,34,14,20,2586,2827
+10-11,Lagun Aro GBC,14,34,12,22,2510,2594
+10-11,Assignia Manresa,15,34,10,24,2222,2428
+10-11,Meridiano Alicante,16,34,9,25,2348,2461
+10-11,Menorca Basquet,17,34,7,27,2325,2596
+10-11,C.B. Granada,18,34,7,27,2351,2627
+00-01,F.C. Barcelona,1,34,29,5,3055,2613
+00-01,Real Madrid,2,34,27,7,2788,2519
+00-01,TAU Cer\xe1mica,3,34,27,7,2888,2452
+00-01,Unicaja,4,34,27,7,2883,2582
+00-01,Pamesa Valencia,5,34,22,12,2760,2622
+00-01,Adecco Estudiantes,6,34,21,13,2767,2698
+00-01,Jabones Pardo Fuenlabrada,7,34,20,14,2752,2669
+00-01,F\xf3rum Valladolid C.B.,8,34,16,18,2759,2795
+00-01,Casademont Girona,9,34,15,19,2733,2797
+00-01,C\xe1ceres C.B.,10,34,14,20,2650,2732
+00-01,Breog\xe1n Universidade,11,34,13,21,2669,2722
+00-01,Caja San Fernando,12,34,13,21,2605,2642
+00-01,Canarias Telecom,13,34,12,22,2591,2808
+00-01,Joventut Badalona,14,34,11,23,2692,2820
+00-01,Gij\xf3n Baloncesto,15,34,11,23,2643,2823
+00-01,Cantabria Lobos,16,34,10,24,2484,2894
+00-01,Proaguas Costablanca,17,34,9,25,2554,2846
+00-01,C. Ourense Baloncesto,18,34,9,25,2630,2869
+90-91,Montigal\xe1 Joventut,1,34,30,4,3091,2550
+90-91,F.C. Barcelona,2,34,26,8,2819,2443
+90-91,Estudiantes Caja Postal,3,34,25,9,2862,2637
+90-91,Real Madrid Otaysa,4,34,24,10,2745,2575
+90-91,Taugr\xe9s,5,34,21,13,2796,2669
+90-91,CAI Zaragoza,6,34,20,14,3135,2929
+90-91,F\xf3rum Valladolid,7,34,20,14,2722,2695
+90-91,Valvi Girona,8,34,18,16,2695,2668
+90-91,Atl\xe9tico Madrid Villalba,9,34,17,17,2648,2744
+90-91,Mayoral Maristas,10,34,16,18,2665,2658
+90-91,Huesca La Magia,11,34,16,18,2648,2612
+90-91,Caja Ronda,12,34,15,19,2435,2534
+90-91,Caixa Ourense,13,34,15,19,2749,2984
+90-91,Pamesa Valencia,14,34,15,19,2615,2628
+90-91,Tdk Manresa,15,34,15,19,2625,2751
+90-91,Dyc Breog\xe1n,16,34,15,19,2550,2669
+90-91,Caja San Fernando,17,34,15,19,2759,2812
+90-91,Zumos Juver Murcia,18,34,15,19,2696,2746
+90-91,Grupo Ifa Granollers,19,34,14,20,2712,2819
+90-91,C.B. Elos\xfaa Le\xf3n,20,34,13,21,2853,2847
+90-91,Cajabilbao,21,34,12,22,2782,2911
+90-91,Oar Ferrol,22,34,12,22,2565,2686
+90-91,Cajacanarias,23,34,10,24,2820,3055
+90-91,Puleva Baloncesto Granada,24,34,9,25,2534,2899
+09-10,Regal FC Barcelona,1,34,31,3,2736,2202
+09-10,Caja Laboral,2,34,27,7,2734,2484
+09-10,Real Madrid,3,34,27,7,2762,2442
+09-10,Power Electronics Valencia,4,34,23,11,2637,2563
+09-10,Cajasol,5,34,19,15,2406,2334
+09-10,Unicaja,6,34,19,15,2721,2545
+09-10,Asefa Estudiantes,7,34,19,15,2672,2621
+09-10,Gran Canaria 2014,8,34,17,17,2560,2544
+09-10,Bizkaia Bilbao Basket,9,34,16,18,2538,2551
+09-10,DKV Joventut,10,34,15,19,2639,2712
+09-10,CB Granada,11,34,15,19,2622,2690
+09-10,Suzuki Manresa,12,34,14,20,2440,2563
+09-10,Blancos de Rueda Valladolid,13,34,13,21,2484,2631
+09-10,Lagun Aro GBC,14,34,13,21,2500,2667
+09-10,Meridiano Alicante,15,34,13,21,2563,2696
+09-10,Ayuda en Acci\xf3n Fuenlabrada,16,34,12,22,2549,2733
+09-10,Xacobeo Blu:sens,17,34,8,26,2520,2814
+09-10,CB Murcia,18,34,5,29,2499,2790
+99-00,F.C. Barcelona,1,34,26,8,2545,2234
+99-00,Real Madrid Teka,2,34,23,11,2561,2335
+99-00,Adecco Estudiantes,3,34,23,11,2507,2376
+99-00,Caja San Fernando,4,34,22,12,2402,2297
+99-00,Tau Cer\xe1mica,5,34,21,13,2696,2500
+99-00,Pamesa Valencia,6,34,20,14,2703,2528
+99-00,Canarias Telecom,7,34,19,15,2435,2479
+99-00,Unicaja,8,34,19,15,2412,2370
+99-00,C\xe1ceres C.B.,9,34,17,17,2450,2467
+99-00,Casademont Girona,10,34,16,18,2523,2473
+99-00,Pinturas Bruguer Badalona,11,34,16,18,2640,2650
+99-00,F\xf3rum Valladolid,12,34,15,19,2342,2444
+99-00,Breog\xe1n Universidade,13,34,15,19,2432,2522
+99-00,Jabones Pardo Fuenlabrada,14,34,11,23,2471,2563
+99-00,Cantabria Lobos,15,34,11,23,2345,2619
+99-00,Cabitel Gij\xf3n B.,16,34,11,23,2332,2570
+99-00,Tdk Manresa,17,34,11,23,2336,2487
+99-00,B. Le\xf3n Caja Espa\xf1a,18,34,10,24,2296,2514
+08-09,TAU Cer\xe1mica,1,32,28,4,2865,2464
+08-09,Regal FC Barcelona,2,32,26,6,2601,2278
+08-09,Unicaja,3,32,24,8,2668,2325
+08-09,Real Madrid,4,32,23,9,2690,2528
+08-09,DKV Joventut,5,32,22,10,2647,2525
+08-09,Kalise Gran Canaria,6,32,20,12,2566,2487
+08-09,Pamesa Valencia,7,32,16,16,2452,2416
+08-09,iurbentia Bilbao Basket,8,32,15,17,2451,2492
+08-09,ALTA GESTI\xd3N Fuenlabrada,9,32,15,17,2669,2639
+08-09,Ricoh Manresa,10,32,14,18,2382,2503
+08-09,C.B. Granada,11,32,12,20,2369,2516
+08-09,Bruesa GBC,12,32,11,21,2448,2589
+08-09,MMT Estudiantes,13,32,11,21,2473,2586
+08-09,Cajasol,14,32,10,22,2429,2641
+08-09,Club Baloncesto Murcia,15,32,9,23,2347,2636
+08-09,CAI Zaragoza,16,32,8,24,2383,2615
+08-09,ViveMenorca,17,32,8,24,2281,2481
+98-99,F.C. Barcelona,1,34,26,8,2885,2543
+98-99,Real Madrid Teka,2,34,26,8,2768,2524
+98-99,Caja San Fernando,3,34,25,9,2488,2366
+98-99,Tau Cer\xe1mica,4,34,24,10,2712,2576
+98-99,Adecco Estudiantes,5,34,21,13,2791,2652
+98-99,Pamesa Cer\xe1mica,6,34,18,16,2600,2565
+98-99,Baloncesto Fuenlabrada,7,34,18,16,2758,2719
+98-99,Girona Gavis,8,34,18,16,2696,2692
+98-99,Unicaja,9,34,18,16,2577,2532
+98-99,Pinturas Bruguer Badalona,10,34,18,16,2666,2565
+98-99,Tdk Manresa,11,34,16,18,2532,2545
+98-99,C\xe1ceres C.B.,12,34,14,20,2566,2613
+98-99,F\xf3rum Valladolid,13,34,13,21,2574,2625
+98-99,Le\xf3n Caja Espa\xf1a,14,34,13,21,2478,2699
+98-99,C.B. Gran Canaria,15,34,13,21,2506,2585
+98-99,Lobos Caja Cantabria,16,34,13,21,2724,2891
+98-99,Covir\xe1n Cervezas Alhambra,17,34,8,26,2436,2730
+98-99,Recreativos Orenes Murcia,18,34,4,30,2517,2852
+07-08,Real Madrid,1,34,29,5,2862,2572
+07-08,DKV Joventut,2,34,25,9,2980,2650
+07-08,AXA F.C. Barcelona,3,34,24,10,2617,2524
+07-08,TAU Cer\xe1mica,4,34,22,12,2867,2604
+07-08,Pamesa Valencia,5,34,22,12,2706,2520
+07-08,iurbentia Bilbao Basket,6,34,21,13,2597,2507
+07-08,Akasvayu Girona,7,34,21,13,2726,2685
+07-08,Unicaja,8,34,17,17,2721,2648
+07-08,Gran Canaria Grupo Dunas,9,34,16,18,2682,2689
+07-08,Cajasol,10,34,14,20,2701,2764
+07-08,Ricoh Manresa,11,34,14,20,2715,2817
+07-08,Alta Gesti\xf3n Fuenlabrada,12,34,13,21,2542,2671
+07-08,Polaris World CB Murcia,13,34,13,21,2491,2634
+07-08,MMT Estudiantes,14,34,12,22,2561,2694
+07-08,C.B. Granada,15,34,12,22,2629,2761
+07-08,ViveMenorca,16,34,12,22,2567,2755
+07-08,Grupo Capitol Valladolid,17,34,11,23,2685,2887
+07-08,Grupo Begar Le\xf3n,18,34,8,26,2571,2838
+97-98,Tau Cer\xe1mica,1,34,27,7,2906,2627
+97-98,Real Madrid Teka,2,34,25,9,2782,2507
+97-98,Adecco Estudiantes,3,34,24,10,2889,2651
+97-98,Festina Joventut,4,34,24,10,3068,2889
+97-98,F.C. Barcelona Banca Catalana,5,34,21,13,2894,2760
+97-98,Tdk Manresa,6,34,21,13,2728,2593
+97-98,Unicaja,7,34,20,14,2703,2607
+97-98,Pamesa Valencia,8,34,20,14,2692,2635
+97-98,F\xf3rum Valladolid,9,34,16,18,2709,2816
+97-98,C.B. Gran Canaria,10,34,15,19,2833,2838
+97-98,Le\xf3n Caja Espa\xf1a,11,34,14,20,2646,2811
+97-98,Valvi Girona,12,34,14,20,2917,2983
+97-98,Caja San Fernando,13,34,13,21,2677,2757
+97-98,Caja Cantabria,14,34,12,22,2720,2821
+97-98,C\xe1ceres C.B.,15,34,12,22,2605,2799
+97-98,Covir\xe1n Sierra Nevada Granada,16,34,11,23,2715,2823
+97-98,C.B. Ciudad De Huelva,17,34,9,25,2603,2921
+97-98,Ourense Xacobeo 99,18,34,8,26,2578,2827
+06-07,TAU Cer\xe1mica,1,34,26,8,2858,2547
+06-07,Real Madrid,2,34,25,9,2836,2532
+06-07,DKV Joventut,3,34,23,11,2736,2575
+06-07,Winterthur F.C. Barcelona,4,34,23,11,2656,2434
+06-07,Akasvayu Girona,5,34,21,13,2739,2638
+06-07,Gran Canaria Grupo Dunas,6,34,21,13,2648,2591
+06-07,Pamesa Valencia,7,34,19,15,2573,2553
+06-07,Unicaja,8,34,17,17,2578,2438
+06-07,MMT Estudiantes,9,34,16,18,2635,2744
+06-07,Lagun Aro Bilbao Basket,10,34,15,19,2516,2610
+06-07,C.B. Granada,11,34,15,19,2648,2726
+06-07,Alta Gesti\xf3n Fuenlabrada,12,34,14,20,2508,2583
+06-07,Caja San Fernando,13,34,14,20,2629,2804
+06-07,Polaris World CB Murcia,14,34,13,21,2506,2620
+06-07,ViveMenorca,15,34,12,22,2542,2705
+06-07,Grupo Capitol Valladolid,16,34,12,22,2555,2678
+06-07,Etosa Alicante,17,34,12,22,2469,2678
+06-07,Bruesa GBC,18,34,8,26,2477,2653
+96-97,Real Madrid Teka,1,34,29,5,2918,2582
+96-97,F.C. Barcelona Banca Catalana,2,34,27,7,2962,2643
+96-97,Estudiantes Argentaria,3,34,21,13,2804,2726
+96-97,Festina Joventut,4,34,21,13,2864,2703
+96-97,Taugr\xe9s,5,34,20,14,2831,2710
+96-97,Le\xf3n Caja Espa\xf1a,6,34,20,14,2819,2824
+96-97,Unicaja,7,34,19,15,2699,2611
+96-97,Tdk Manresa,8,34,19,15,2666,2538
+96-97,Caja San Fernando,9,34,19,15,2724,2693
+96-97,C\xe1ceres C.B.,10,34,18,16,2812,2759
+96-97,Pamesa Valencia,11,34,17,17,2763,2797
+96-97,C.B. Gran Canaria,12,34,17,17,2748,2717
+96-97,Covir\xe1n Granada,13,34,14,20,2881,2961
+96-97,Valvi Girona,14,34,14,20,2521,2685
+96-97,F\xf3rum Valladolid,15,34,12,22,2738,2875
+96-97,Xacobeo 99 Ourense,16,34,10,24,2568,2774
+96-97,C.B. Murcia Artel,17,34,5,29,2588,2913
+96-97,Baloncesto Fuenlabrada,18,34,4,30,2527,2922

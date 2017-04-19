@@ -3,8 +3,10 @@
 from urllib import urlopen
 from bs4 import BeautifulSoup
 from string import ascii_letters
+import pandas as pd
 import re
 import sys
+import string
 
 pagina = "http://www.bdbasket.com/es"
 html = urlopen(pagina)
@@ -23,23 +25,29 @@ for a in soup.find_all(href=True):
 #print lista_equipos
 
 def recorro_temporadas(lista_temporadas):
-    temporada = {}
-    lista = []
+    filas = []
     for n in lista_temporadas:
         url = n
         html = urlopen(url)
         soup = BeautifulSoup(html, 'lxml')
         table = soup.find("table", id = "classific")
-        rows = table.findAll('a')
-        contador = 1
-        for k in rows:
-            equipo = k.getText()
-            posicion = lista.append[(contador, n[-10:-5])]
-            temporada[equipo]= posicion
-            contador = contador +1
-        print temporada
+        rows = table.findAll('tr')
+        data = [[td.findChildren(text=True) for td in tr.findAll("td")] for tr in rows]
+        columnas = ["temporada", "equipo", "puesto", "PJ","PG","PP","PF","PC"]
+        for k in range(1,len(data)):
+            temp = str(n[-10:-5])
+            equipo = string.split(str(data[k][3]), "'")[1]
+            puesto = int(string.split(str(data[k][1]), "'")[1])
+            PJ = int(string.split(str(data[k][4]), "'")[1])
+            PG = int(string.split(str(data[k][5]), "'")[1])
+            PP = int(string.split(str(data[k][6]), "'")[1])
+            PF = int(string.split(str(data[k][7]), "'")[1])
+            PC = int(string.split(str(data[k][8]), "'")[1])
+            filas.append([temp,equipo,puesto,PJ,PG,PP,PF,PC])
+    temporada = pd.DataFrame(filas,columns= columnas)
     return temporada
         #sys.exit()
         
         
 listado =recorro_temporadas(lista_temporadas)
+listado.to_csv("C:\\Users\\Z22P1P0Z\\Google Drive\\master\\Github\\Proyecto-Kschool-Basket\\temporadas.csv", index=False)
