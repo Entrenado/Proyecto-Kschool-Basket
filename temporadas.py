@@ -32,6 +32,10 @@ def recorro_temporadas(lista_temporadas):
         soup = BeautifulSoup(html, 'lxml')
         table = soup.find("table", id = "classific")
         rows = table.findAll('tr')
+        for a in soup.find_all(href=True):
+            if a.get('href').find('t/t') != -1 and  re.compile('[0-9]').search( a.get('href')):
+                url_equipo = a.get('href')
+                print url_equipo
         data = [[td.findChildren(text=True) for td in tr.findAll("td")] for tr in rows]
         columnas = ["temporada", "equipo", "puesto", "PJ","PG","PP","PF","PC"]
         for k in range(1,len(data)):
