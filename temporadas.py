@@ -23,8 +23,21 @@ for a in soup.find_all(href=True):
         lista_equipos.append("http://www.bdbasket.com/es/" +a.get('href'))
 #print lista_temporadas
 #print lista_equipos
+def  capturo_equipos():
+    equipo_web={}
+    urle = "http://www.bdbasket.com/e/e.html"
+    htmle = urlopen(urle)
+    soup = BeautifulSoup(htmle, 'lxml')
+    nameList = soup.findAll("div", {"class":"eq2b"})
+    nombre = [a.findChildren(text=True) for a in nameList]
+    web = [[w.get('href') for w in a.findChildren(href=True)] for a in nameList]
+    for n in range(0,len(nombre)-1):
+        equipo_web[str(nombre[n]).split("'")[1]] = web[n][0].split("e")[1][0:2].split(".")[0]
+    return equipo_web
 
-def recorro_temporadas(lista_temporadas):
+equipo_web = capturo_equipos()
+    
+def recorro_temporadas(lista_temporadas, equipo_web):
     filas = []
     for n in lista_temporadas:
         url = n
@@ -32,10 +45,6 @@ def recorro_temporadas(lista_temporadas):
         soup = BeautifulSoup(html, 'lxml')
         table = soup.find("table", id = "classific")
         rows = table.findAll('tr')
-        for a in soup.find_all(href=True):
-            if a.get('href').find('t/t') != -1 and  re.compile('[0-9]').search( a.get('href')):
-                url_equipo = a.get('href')
-                print url_equipo
         data = [[td.findChildren(text=True) for td in tr.findAll("td")] for tr in rows]
         columnas = ["temporada", "equipo", "puesto", "PJ","PG","PP","PF","PC"]
         for k in range(1,len(data)):
@@ -53,5 +62,5 @@ def recorro_temporadas(lista_temporadas):
         #sys.exit()
         
         
-listado =recorro_temporadas(lista_temporadas)
+listado =recorro_temporadas(lista_temporadas,equipo_web)
 listado.to_csv("C:\\Users\\Z22P1P0Z\\Google Drive\\master\\Github\\Proyecto-Kschool-Basket\\temporadas.csv", index=False)
