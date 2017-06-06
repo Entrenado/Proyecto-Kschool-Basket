@@ -10,6 +10,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing, svm
+from sklearn.metrics import accuracy_score
 #%matplotlib inline
 
 
@@ -64,6 +65,8 @@ result3.summary()
 # Como no parece que funcione especialmente bien la regresión vamos a trabajar sobre un método de clasificación
 # Al final los puestos irán del 1 al 26 en el peor de los casos. Tomaremos esos puestos como categorías
 #
+
+#voy a escalar los valores, para ello me quedo con las variables numéricas en el data frame
 columnas_numericas = ["PJ", "PG", "PP", "PF", "PC", "total_min", "total_val", "total_puntos", \
         "total_min_espana","total_puntos_espana", "total_val_espana", "total_jug", "jug_esp",\
        "jug1", "jug3", "jug5", "mas5", "porcentaje_jug_esp",\
@@ -76,6 +79,27 @@ columnas_numericas = ["PJ", "PG", "PP", "PF", "PC", "total_min", "total_val", "t
 df_numerico = df[columnas_numericas]
 clf = svm.SVC()
 df_numerico = df_numerico.apply(lambda x: preprocessing.scale(x))
+# añado la columna objetivo
 df_numerico["puesto"] =df["puesto"]
-train, test = train_test_split(df_numerico, test_size = 0.2)
+# elimino PG, PP, puesto que son valores sobre los que no podemos hacer nada. Explican demasiado del puesto sin aportar valor
+df_numerico = df_numerico.drop(labels="PG", axis=1)
+df_numerico = df_numerico.drop(labels="PP", axis=1)
+# genero los conjuntos de train y test. Para validación se puede utilizar las temporadas que no están en los datos
 
+valores = ["PF", "PC", "total_min", "total_val","jug1", "jug3", "jug5", "mas5","total_jug","total_val_no_esp", "porcentaje_val_esp", "total_min_no_esp", "porcentaje_min_esp"]
+X_train, X_test, y_train, y_test = train_test_split(df_numerico[valores],df_numerico["puesto"],test_size=0.2,random_state=0)
+C = 1.0  # SVM regularization parameter
+svc = svm.SVC(kernel='linear', C=C).fit(X_train, y_train)
+rbf_svc = svm.SVC(kernel='rbf', gamma=0.7, C=C).fit(X_train, y_train)
+poly_svc = svm.SVC(kernel='poly', degree=3, C=C).fit(X_train, y_train)
+lin_svc = svm.LinearSVC(C=C).fit(X_train, y_train)
+lista = [svc, rbf_svc,poly_svc,lin_svc]
+listado = ["svc", "rbf_svc","poly_svc","lin_svc"]
+contador = 0
+for k in lista:
+    clf_svm = k
+    clf_svm.fit(X_train, y_train)
+    y_pred_svm = clf_svm.predict(X_test)
+    acc_svm = accuracy_score(y_test, y_pred_svm)
+    print "accuracy %s: "%listado[contador],acc_svm
+    contador = contador +1
