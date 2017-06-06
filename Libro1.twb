@@ -1,0 +1,1714 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10200.17.0328.0755                               -->
+<workbook source-build='10.2.1 (10200.17.0328.0755)' source-platform='win' version='10.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='temporadas_totalizado' inline='true' name='federated.156h0pr1cv1f9q1ettox118mpm4o' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='temporadas_totalizado' name='textscan.1j4j0td1bnow171ft6nxv1dhm7wc'>
+            <connection class='textscan' directory='D:/Master/ProyectoBasket/Proyecto-Kschool-Basket' filename='temporadas_totalizado.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1j4j0td1bnow171ft6nxv1dhm7wc' name='temporadas_totalizado.csv' table='[temporadas_totalizado#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES' separator=',' text-qualifier=''>
+            <column datatype='string' name='temporada' ordinal='0' />
+            <column datatype='string' name='equipo' ordinal='1' />
+            <column datatype='integer' name='puesto' ordinal='2' />
+            <column datatype='integer' name='PJ' ordinal='3' />
+            <column datatype='integer' name='PG' ordinal='4' />
+            <column datatype='integer' name='PP' ordinal='5' />
+            <column datatype='integer' name='PF' ordinal='6' />
+            <column datatype='integer' name='PC' ordinal='7' />
+            <column datatype='integer' name='total_min' ordinal='8' />
+            <column datatype='integer' name='total_val' ordinal='9' />
+            <column datatype='integer' name='total_puntos' ordinal='10' />
+            <column datatype='integer' name='total_min_espana' ordinal='11' />
+            <column datatype='integer' name='total_puntos_espana' ordinal='12' />
+            <column datatype='integer' name='total_val_espana' ordinal='13' />
+            <column datatype='integer' name='total_jug' ordinal='14' />
+            <column datatype='integer' name='jug_esp' ordinal='15' />
+            <column datatype='integer' name='jug1' ordinal='16' />
+            <column datatype='integer' name='jug3' ordinal='17' />
+            <column datatype='integer' name='jug5' ordinal='18' />
+            <column datatype='integer' name='mas5' ordinal='19' />
+            <column datatype='string' name='porcentaje_jug_esp' ordinal='20' />
+            <column datatype='string' name='porcentaje_jug_1' ordinal='21' />
+            <column datatype='string' name='porcentaje_jug_3' ordinal='22' />
+            <column datatype='string' name='porcentaje_jug_5' ordinal='23' />
+            <column datatype='string' name='porcentaje_jug_mas5' ordinal='24' />
+            <column datatype='integer' name='total_min_no_esp' ordinal='25' />
+            <column datatype='string' name='porcentaje_min_esp' ordinal='26' />
+            <column datatype='string' name='porcentaje_min_no_esp' ordinal='27' />
+            <column datatype='integer' name='total_puntos_no_esp' ordinal='28' />
+            <column datatype='string' name='porcentaje_puntos_esp' ordinal='29' />
+            <column datatype='string' name='porcentaje_puntos_no_esp' ordinal='30' />
+            <column datatype='integer' name='total_val_no_esp' ordinal='31' />
+            <column datatype='string' name='porcentaje_val_esp' ordinal='32' />
+            <column datatype='string' name='porcentaje_val__no_esp' ordinal='33' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>temporada</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[temporada]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>temporada</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>equipo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[equipo]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>equipo</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>puesto</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[puesto]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>puesto</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PJ</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PJ]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>PJ</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PG]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>PG</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PP]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>PP</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PF]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>PF</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PC</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PC]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>PC</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_min</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_min]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>total_min</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_val</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_val]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>total_val</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_puntos</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_puntos]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>total_puntos</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_min_espana</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_min_espana]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>total_min_espana</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_puntos_espana</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_puntos_espana]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>total_puntos_espana</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_val_espana</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_val_espana]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>total_val_espana</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_jug</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_jug]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>total_jug</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jug_esp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jug_esp]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>jug_esp</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jug1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jug1]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>jug1</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jug3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jug3]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>jug3</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jug5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[jug5]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>jug5</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mas5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mas5]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>mas5</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porcentaje_jug_esp</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[porcentaje_jug_esp]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>porcentaje_jug_esp</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porcentaje_jug_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[porcentaje_jug_1]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>porcentaje_jug_1</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porcentaje_jug_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[porcentaje_jug_3]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>porcentaje_jug_3</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porcentaje_jug_5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[porcentaje_jug_5]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>porcentaje_jug_5</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porcentaje_jug_mas5</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[porcentaje_jug_mas5]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>porcentaje_jug_mas5</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_min_no_esp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_min_no_esp]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>total_min_no_esp</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porcentaje_min_esp</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[porcentaje_min_esp]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>porcentaje_min_esp</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porcentaje_min_no_esp</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[porcentaje_min_no_esp]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>porcentaje_min_no_esp</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_puntos_no_esp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_puntos_no_esp]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>total_puntos_no_esp</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porcentaje_puntos_esp</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[porcentaje_puntos_esp]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>porcentaje_puntos_esp</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porcentaje_puntos_no_esp</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[porcentaje_puntos_no_esp]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>porcentaje_puntos_no_esp</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_val_no_esp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_val_no_esp]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>total_val_no_esp</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porcentaje_val_esp</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[porcentaje_val_esp]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>porcentaje_val_esp</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>porcentaje_val__no_esp</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[porcentaje_val__no_esp]</local-name>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias>porcentaje_val__no_esp</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[temporadas_totalizado.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='quote-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='temporadas_totalizado' name='federated.156h0pr1cv1f9q1ettox118mpm4o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.156h0pr1cv1f9q1ettox118mpm4o'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column datatype='integer' name='[PC]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[PF]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[PG]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[PJ]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[PP]' role='measure' type='quantitative' />
+            <column datatype='string' name='[equipo]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[jug1]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[jug3]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[jug5]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[jug_esp]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[mas5]' role='measure' type='quantitative' />
+            <column-instance column='[equipo]' derivation='None' name='[none:equipo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[porcentaje_jug_1]' derivation='None' name='[none:porcentaje_jug_1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[porcentaje_jug_3]' derivation='None' name='[none:porcentaje_jug_3:nk]' pivot='key' type='nominal' />
+            <column-instance column='[porcentaje_jug_esp]' derivation='None' name='[none:porcentaje_jug_esp:nk]' pivot='key' type='nominal' />
+            <column-instance column='[porcentaje_jug_mas5]' derivation='None' name='[none:porcentaje_jug_mas5:nk]' pivot='key' type='nominal' />
+            <column-instance column='[porcentaje_min_esp]' derivation='None' name='[none:porcentaje_min_esp:nk]' pivot='key' type='nominal' />
+            <column-instance column='[porcentaje_min_no_esp]' derivation='None' name='[none:porcentaje_min_no_esp:nk]' pivot='key' type='nominal' />
+            <column-instance column='[porcentaje_puntos_esp]' derivation='None' name='[none:porcentaje_puntos_esp:nk]' pivot='key' type='nominal' />
+            <column-instance column='[porcentaje_puntos_no_esp]' derivation='None' name='[none:porcentaje_puntos_no_esp:nk]' pivot='key' type='nominal' />
+            <column-instance column='[porcentaje_val__no_esp]' derivation='None' name='[none:porcentaje_val__no_esp:nk]' pivot='key' type='nominal' />
+            <column-instance column='[porcentaje_val_esp]' derivation='None' name='[none:porcentaje_val_esp:nk]' pivot='key' type='nominal' />
+            <column-instance column='[temporada]' derivation='None' name='[none:temporada:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[porcentaje_jug_1]' role='dimension' type='nominal' />
+            <column datatype='string' name='[porcentaje_jug_3]' role='dimension' type='nominal' />
+            <column datatype='string' name='[porcentaje_jug_esp]' role='dimension' type='nominal' />
+            <column datatype='string' name='[porcentaje_jug_mas5]' role='dimension' type='nominal' />
+            <column datatype='string' name='[porcentaje_min_esp]' role='dimension' type='nominal' />
+            <column datatype='string' name='[porcentaje_min_no_esp]' role='dimension' type='nominal' />
+            <column datatype='string' name='[porcentaje_puntos_esp]' role='dimension' type='nominal' />
+            <column datatype='string' name='[porcentaje_puntos_no_esp]' role='dimension' type='nominal' />
+            <column datatype='string' name='[porcentaje_val__no_esp]' role='dimension' type='nominal' />
+            <column datatype='string' name='[porcentaje_val_esp]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[puesto]' role='measure' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PC]' derivation='Sum' name='[sum:PC:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PF]' derivation='Sum' name='[sum:PF:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PG]' derivation='Sum' name='[sum:PG:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PJ]' derivation='Sum' name='[sum:PJ:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PP]' derivation='Sum' name='[sum:PP:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[jug1]' derivation='Sum' name='[sum:jug1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[jug3]' derivation='Sum' name='[sum:jug3:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[jug5]' derivation='Sum' name='[sum:jug5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[jug_esp]' derivation='Sum' name='[sum:jug_esp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[mas5]' derivation='Sum' name='[sum:mas5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[puesto]' derivation='Sum' name='[sum:puesto:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_jug]' derivation='Sum' name='[sum:total_jug:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_min]' derivation='Sum' name='[sum:total_min:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_min_espana]' derivation='Sum' name='[sum:total_min_espana:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_min_no_esp]' derivation='Sum' name='[sum:total_min_no_esp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_puntos]' derivation='Sum' name='[sum:total_puntos:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_puntos_espana]' derivation='Sum' name='[sum:total_puntos_espana:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_puntos_no_esp]' derivation='Sum' name='[sum:total_puntos_no_esp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_val]' derivation='Sum' name='[sum:total_val:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_val_espana]' derivation='Sum' name='[sum:total_val_espana:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_val_no_esp]' derivation='Sum' name='[sum:total_val_no_esp:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[temporada]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[total_jug]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[total_min]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[total_min_espana]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[total_min_no_esp]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[total_puntos]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[total_puntos_espana]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[total_puntos_no_esp]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[total_val]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[total_val_espana]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[total_val_no_esp]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:Number of Records:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:Number of Records:qk]' z-order='1' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PC:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PC:qk]' z-order='2' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:mas5:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline10' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:mas5:qk]' z-order='11' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:puesto:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline11' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:puesto:qk]' z-order='12' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_jug:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline12' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_jug:qk]' z-order='13' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_min:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline13' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_min:qk]' z-order='14' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_min_espana:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline14' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_min_espana:qk]' z-order='15' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_min_no_esp:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline15' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_min_no_esp:qk]' z-order='16' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_puntos:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline16' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_puntos:qk]' z-order='17' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_puntos_espana:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline17' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_puntos_espana:qk]' z-order='18' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_puntos_no_esp:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline18' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_puntos_no_esp:qk]' z-order='19' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_val:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline19' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_val:qk]' z-order='20' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PF:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline2' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PF:qk]' z-order='3' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_val_espana:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline20' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_val_espana:qk]' z-order='21' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_val_no_esp:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline21' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_val_no_esp:qk]' z-order='22' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PG:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline3' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PG:qk]' z-order='4' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PJ:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline4' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PJ:qk]' z-order='5' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PP:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline5' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PP:qk]' z-order='6' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug1:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline6' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug1:qk]' z-order='7' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug3:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline7' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug3:qk]' z-order='8' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug5:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline8' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug5:qk]' z-order='9' />
+            <reference-line axis-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug_esp:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline9' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug_esp:qk]' z-order='10' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:Number of Records:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PC:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PF:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PG:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PJ:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PP:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug1:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug3:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug5:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug_esp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='11' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:mas5:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='12' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:puesto:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='13' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_jug:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='14' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_min:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='15' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_min_espana:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='16' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_min_no_esp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='17' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_puntos:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='18' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_puntos_espana:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='19' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_puntos_no_esp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='20' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_val:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='21' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_val_espana:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='22' y-axis-name='[federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_val_no_esp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_mas5:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_min_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_puntos_no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_1:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_3:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_jug_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val__no_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:porcentaje_val_esp:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:temporada:nk]' />
+              <lod column='[federated.156h0pr1cv1f9q1ettox118mpm4o].[none:equipo:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:Number of Records:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PC:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PF:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PG:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PJ:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:PP:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug1:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug3:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug5:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:jug_esp:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:mas5:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:puesto:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_jug:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_min:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_min_espana:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_min_no_esp:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_puntos:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_puntos_espana:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_puntos_no_esp:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_val:qk] + ([federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_val_espana:qk] + [federated.156h0pr1cv1f9q1ettox118mpm4o].[sum:total_val_no_esp:qk])))))))))))))))))))))</rows>
+        <cols>[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Boxplot columnas' type='storyboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='9' param='vert' removable='false' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='6273' id='8' type='title' w='100000' x='0' y='0' />
+            <zone h='93262' id='7' param='vert' removable='false' type='layout-flow' w='100000' x='0' y='6273'>
+              <zone h='93262' id='1' param='vert' removable='false' type='layout-flow' w='100000' x='0' y='6273'>
+                <zone h='12661' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='100000' x='0' y='6273' />
+                <zone h='80601' id='5' paired-zone-id='4' removable='false' type='flipboard' w='100000' x='0' y='18934'>
+                  <flipboard active-id='2' nav-type='caption' show-nav-arrows='true'>
+                    <story-points>
+                      <story-point caption='revisando los boxplot' captured-sheet='Hoja 2' id='2' />
+                    </story-points>
+                  </flipboard>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Hoja 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.156h0pr1cv1f9q1ettox118mpm4o].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' maximized='true' name='Boxplot columnas'>
+      <viewpoints />
+      <active id='4' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Boxplot columnas' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Hoja 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAfMUlEQVR4nO2dWZNcx5WYv7vUrX3vfW/0hpXYKIqkRGqGoseSJiyLY08EPfMf/BvkCL84
+      whF2hJ/84vCDwwopQhPzIGsUtmQpKFkiBVEUQKDRaDR636u79u3ufmigh8RUVRfIqq5GV34v
+      FwUkTp57b56beTJPnpRc13URCLoUudMKCASdRK31l2urK4yOTyLZZVa380yODZwsyXXJpffJ
+      6TIHmwvEh2aZGO7DcRxSqRSapn0hBXfTJXKlKnOjyS/0/wWCRtQ0gNT2CmVbhsIOFa2fySYE
+      lTL7pEoOU6P9mOVDCplDGOlHURQCgQCRSOQLKZhIJL7Q/xMImqHmEOjixcv85uf/gO7r5+al
+      ieYkKSpGKctuKs3g0BgXp8fQTaeFqgoEradmD/Dp/ALf+dY32SvaSJLUlKBgNMnlqBimCF4u
+      ahqAV7b54Ld30A2TQDDIxYnB09ZLIDgVpNOYBs3n81/YBxAI2knLpkFdx2ZlZRXHhVw+RzZ9
+      gOmIJQbB2abmEOiLYBk62XyWMRe215dx1TCX4klc18V1XRxHOMSCs0fLDMDjCxDyewHQ9Soe
+      9WjI88wAxIKz4CzSMgOoFDIUCiW29/YZvzCHZJtULRe/R0aWZRRFaVVVAkHLEE6woKsRsUCC
+      rkYYgKCrEQYg6GqEAQi6muNZoEKh0LapylKp1Ba5AsGX5dgAwuFwWytq9yyQ67r83QcLXJ7o
+      4dJ4b1vrEpwfztUQ6Ae/+JTf3FvvtBqCl4iWLYSZ1RLLq+v0D0+gYIFt4ovE8cjNhVN/GTKZ
+      DLZtY1WLFPI5Dg4OCAQCBAKBttcteLlpmQFIioehoX7WtrbQqGK6Gpej8VMJhbh79y6VSgU5
+      u8zBRpU7d3RmZ2e5cOFC2+oUnA9aZgCKqpI+TONRVQqHGfyxEQAcx2l7MNxbb72F68J//fkq
+      w9PX+Iu/eOO4boGgES0zgFIuTaliEE3E6IlfguNYIKXtsUAff/wx1WqVuR4ZqbTLhx9+yPj4
+      OCMjI22rU3A+aJkBhGI9XI71tErcCxEJh/H5fExOjDGQCBGLxfB5vR3RRfBy0TID6CSFYhG9
+      WuWDj/7ElakR+sMKsVis02oJXgLOhQHcunUL13X5Dz++S3zoAm+8+WanVRK8JLTMAFzXIXN4
+      SDCaQMYG10X2aChNZpX4MnzwwQeUy2XkwhZbj+FnPyuIWSBBU9Q0gKWlRyT94MTnSDY5la6X
+      Cui2w/bjJwR8EpWywcUrl1upa12uXr2K7Thov9lnZGqcV1+9ItYABE1Rc0PML//hxyyvruMG
+      B/n6299oKi2K61g8erjA4Pg0C5/8mtjwZWYnh3Ach3w+3/ZQC4DlnSzJiJ9oUDjAguao2QNM
+      z8yRqSq89c636I36mhKU2lihaEuUy2VGpy5jVcvH06CKoqCq7Xc3Zkc7MwsleHmp2QP85oOf
+      Mzw0zOP1fd54/auEA80ZQT3ElkjBWaVmMNz4yAibOwf4PTK5YuW0dRIITg2xKV7Q1ZyrcGiB
+      4EVpmQHYRpU/fvInHBf29/fZ3lgXqREFZ57WTc3ICgG/huvC6uMHRAamGZTAtu2jWH3LallV
+      AkGraGE4tAfl6eaXZP8gpXIBJAlFOb1pUIHgRWlpakTTctje22dwaAwVG9108HmEmyE4u4hZ
+      IEFXIz7Pgq5GGICgqxEGIOhqjp1gy7LalrnBsixM02yLbIHgy3BsAKZpts0AbNsWBiA4kxwb
+      gN/vb1sllmWdqQ0qumHx4fwmb14dxaOKk2u6mZatAxjlPEurGwTCSdxqhrKjcXluivZviGye
+      dDrNT3/6Uwplg1/+fp5Hr18h4PPw3e9+V0zTdimtOyTPH0KTXUyrBG6QqKRTcV28jnNmQiEi
+      kQjvv/8+957s8b/ni7z5zne4OHZ0uv1Z0E9w+rSuB6hWGb0ww/z8PJrHj4NN/xkNhTBtF/fp
+      9SzpJTh9Wvb2VUXmycoK07NXQM9Rdjx4WiW8xbg1/iToTloXDKf5mJ27ePQj0Ev7t8B/cZ5N
+      domjiwViIUzQ1QgDEHQ1wgAEXU1NH0CvVpEkl9RBmmTvAD7t5MUi/ek6gKz6cas5Ko7KrRvX
+      ztQ6QKlU4t69e2ylCkwmZNYe30c/XOXGjRttXQgUnF1qGsDde39iLKkxv2MS2j7gja9cP1GQ
+      5g8TDXiR/F4qUi8xqpRcF/8ZWgeQZZmhoSG8oQqGEmRyood4yIckSWdCP8HpU9MA4n6V38/v
+      gFVm/NV3mhKU21lhNVVkZjJBpbhC1lEZkCTkM7QO4DgOsiwjPU3YKyEdH95xFvQTnD4133ow
+      FKRaLfP2N79Df7y5GJ7IwDiv9djIskJv/AYOwsEQnH1qttHVrV3efuM2jx7eRzeaGxrIsoKm
+      aaiqgqwoqG08EumLYlkWu7u77O3uHl33jq62bXdaNUGHqGkAAz1J7s0voZdy7B7mTluntmHb
+      NoV8nnw+f3TNHV0dYQBdS80h0IWLr3Dh4iunrUvbsW2bfD5PNltif3+P4bgXFRNbnCbZtbRs
+      mO66DmtraziuS2pnk7WtvVaJbhmxWIzvvfce1776Z2xVAtx688/53nvvncrZBYKzScumPmxD
+      J5VOMzw6yGG2ioci+lAfGrT9oOwX5qkuZ04vwanTumhQr59o0A+4KIqKh6OQ42eN7CwdWu18
+      xgDOkl6C06dlBqCXcuQLRbZ2Mvi9NhXbi0+SQJLaflD2iyLL8vH1LOklOH1aZgDeYJTbt19t
+      lbi28iyH6bOroHvpyrUqn6Z+7iroXrrSAGRZQnp6FXQ3XfUJfJYVompYJJQcv/75T/hIVURW
+      iC6mK7NDu65LRbfwe9XjwDhBd3LcAxQKhbbNiZdKpbbI/bIUjE5rIOg0xwbQjtXQZ/Pstm2f
+      qcxwL8JhvkyhbDAxEOu0KoI20FYfQDqjeYFehB/8Yp7fPdjkh9//151WRdAGXs5WeYr889em
+      uDU72Gk1BG2iK6dBm8FxHCzLYj9TZHU3g2VZYt/AOUT0AHV48OABDx484PcL22ym8miZBaLR
+      KN/+9rc7rZqghbRsGtTSSyytrNMzMIJbOUqNOD7cD5y9adAX4T/96EN+92CDH/27v+60KoI2
+      0LIeQFI8qIpK5nAXx5TxUEJ3+1DPUFaIL8LUUPSl1l/QmJYZgGVajI6NMv/wIZrHD66NfA5m
+      gSqGQ6aov7T6CxrT2uzQq2tMz12Bav5MZ4d+EfxeFb/vPNyJoBZdGQohEDyjZg+wtfaYzd00
+      ijfAjWtXUBUxWyo4n9Rs2ZFYD6Ojo/SEFe78ab4pQa7rsLH6hGLFoJA9YD99ftKpCM4vNXuA
+      3MEOdz59zFvv/DNujTY3/jUrJaK9g6w8eYSMioJDPBE9F36A4PxS0wDWtnd59cYl7n7yCa+/
+      9ireZgRpXjYXHjE5NcHORgY/OqbrIr/k06CC801NAxgZ6GdpZQsZSOdKBP0nm0D+YIeKI5PL
+      6yiUyDoehiUJ6SWfBhWcb8QskKCrEdM7gq5GGICgq2ldblDH4t6n93Ecl43VJRafrIlTeAVn
+      npZ5po5to6gKDgZVQ8WHQdV10RzneFukQHDWaN1B2R4vmiIBMpZtImOhwPGRRM/SEQoEZ4mW
+      5gatVA22dg7pSwQo2x60Z2dxSZJIPyI4k4hpUEFXI8Ylgq5GGICgqxEGIOhqujo1okDQ1tSI
+      n6UbnOBSxUDzKHhUcerMy0LLpkGNcp6l1Q1QfLh6jort4dbNa10xxvrJT35CNpvl9w836Y+H
+      GB+Ice3aNa5fv95p1QQn0DID8PhDqK6JrWho/j7iVCm7Lv4u2A/wrW99C4D/8+//JxfHx3n/
+      va8BnOt7Pi+0zAAqhRyux49RtbDMPTKOwoAkIXfRfgDbdrEdtyvu9bzQsjflD8eYCoSRFQXc
+      oyNSu2H481kcxzk+glXwctC6zHCS9I9fvi4Ne7BdF8cRBvAy0W0faYHgcwgDEHQ1rdsQ47qk
+      D1JUDYtquUihVGmVaIGgbdT0AVzXQddNvD4vzY7mzUoB3XbYeryIZNu4Lly6fq0rDiC4c+cO
+      pVKJWyMeQk6GX/3qV4yPjzM5Odlp1QQnULN93v3o12zsp5m98XXmxnqbEuTxBcmvrjMyNszh
+      bpEAOrrrInXBOsDw8DCmabJb1khG/UyOJAiHw+f6ns8LNQ0gkz3E0E1+8dO/Q/nL7zE92n+i
+      oOzuGjkdQmUbx8yy73gY7JK8QKZpYhgG1WoV3SthGAauK9YDXgZqvqGZ6Tn+3x8f8t5f/w29
+      sWBTguJDF3ht6OmP/p5W6fdSsLuzQ6lUYmN9g3LUT4AyiiyTTCY7rZrgBGo6wet7Kd55+zWe
+      LC1iO85p6yQQnBo1DaAvHuXOH++TP9xjaz9z2joJBKdGzSHQ9OWbTF++edq6vLQUikXy+Typ
+      gwOwg2SjHqq63mm1BE3QUi9N16tomhdTr2C6SlNJdc8D7777LgA//MN/Y3Jwgr/6q3c6rJGg
+      WVq2EGbpJX770R1s12Hx0WOWHj1CpMISnHVad0ieN8jIQC9g4AskCKBTdV18XbAOcIwLjuN2
+      x72eE1qaGGtndw9PIIZtZNjronWAYySQZak77vWc0LI35Q1Gefvtbxz9GBlolViBoK2IaNAW
+      IksScpfuhXhZEQYg6GqEAbSQZCRAMuLvtBqCF0B4ay3gWVoUrbTN1uIh/yOzJNKivCQcZ4du
+      Z5LobskOXa6aeFRZJMZ6iTjuAUqlEk6bAt8qlUrXnA9gm1DttBKCpjk2gFAo1NaKuqEHaJbD
+      XJn/+MPf8W//1WsMJtubklLQGOEEdwCvpjI1FMfv9XRala5HGEAHcByX9b0cti32WnSalhmA
+      bVT48Pd/wHZcnjx6wKfzi+KY1Dr4vCpvXR8j6Nc6rUrX07JpUFn1Eo+FcNFxpDAJVafcbcFw
+      TZLKlPjBz+8zNRRnrE/4Rp2kZQbgui6mYWAYLoZexMShX5JQuikYrkl6Y0H+zTevMpgMi+fS
+      YVq3H8CoEAyGyefLTIwPMTA2LlbZ6lCqmvzol/PkSmLXWKc58ZhUy7K+9FeqWxbCmsWyHT64
+      u8bXr42hecSiWSep2bJXF++ztL4LgBaK8fbrr56qUuedlZ0M/+XHH9EbC3Dtwsk5lwTto3Zq
+      REsnPjBOX9TH7v7+aet07hlMhvn2V2cY7Yt2WpWup6YPMHn5Nmp5l3t375LJVzHFfHVLWdpM
+      878+fMzC2kGnVel66jrBmZLOm2/cRN9fZ3W/cJo6nXtG+yLcnh1kfED0AJ2mrgFMDPXx2w/v
+      8srX/pyRnheLE6pWSuQL4mzgemymCny8uMP6Xr7TqnQ9dQ0gl8/jUSy2UwX8LzhT8WjhIfli
+      8Usrd95w3aOMEb1RHzem+uiP+7Esq62h6ILG1J3frFbKlMomg6EXT26VTMTZXl2nb6APRawE
+      H1MsFvnZz37GQa7M/Y8e8Pf6MgOJEO+++y6xWKzT6nUlNQ1geXEe1R8hFvdwsL1OeXyYgNZs
+      L2CjV01kTUMWK8GfIxaL8f7777OZyrOa1/iX7/0lk4PxTqvV1dRslcNjFxiWjqIW9WIG3bBe
+      wAAUpuYutlDF80e2WGX7oEA6XxEG0GFqGoDX5zv+s98vNnm3Cl3XefToEemSTo/PIJPa5J5+
+      wMzMjHjOHUKMS04RWZaJx+Moms6733iT/mSMWMiHoohwiE4hNsR0AFmW8Gkqitwd+6TPMqIH
+      OEVM02R1ZYVCxeD+cgp9oodY0Es8HkfTxOaYTtAWA9haW6bseJiZHG2H+JcWy7JYXV2lYlhU
+      C0W2N8pkfR6uXL3aadW6ljYYgEFJl/BSoQr4TizfPYTDYf7mb/+Wpa0s//m//z3fe/dfcGU8
+      iSyLkWinaIMBSDi2jY2D5Lo4rott25imefSvT/MDPVv97KbflUqFjz/+mO3DIsWDDT6581sO
+      16LcvHmTYDDYkvqe/d1p/HZdF1mW2/bsTuNe2mAAHpIxL2U7hAbHG+M/W+nzS/+1QgFOKtOu
+      367rfu4htfK3x+NhdnaWSLrEel5lbm6S0d4wmqa1rL7TfF6O47TtWZ3WvRzvCKuVGc5xnJZ0
+      z+VymUAg8KXlCASt5rgH+OxCzO9+/X/JZw+Ij14GG167/eWcNNu2j7t4geAscWwAn/3SDw6N
+      c/PVryDhsrZTbqoXcB2HpcWHFCoOyaiXTK7A+OwrxIMenKcBcYIXZ+ewwPpentcuDXVNftXT
+      5MRN8S+K/vR8XM2jYFqgaSqlUumfGNFnnahnPBtTPv+in40NP4tt2/9kBfV5Z+qkss+X6/b6
+      a72TF62/lpE2W7ZWuXbX33IDqMXzvoRRzrK5ucPWXpHbr98i8HS/Qb0G0IzMVpSt14DaVb/j
+      2LjIxyvC9ep3XRcXPnf80sty//WM6svIbGXZU1kJfr5yxeOjWDaZmRlF/Uw4wPPlcturVEID
+      DES8LCwscvHiXN2yy0+WSQR9EO0h9lzKwc+XddhY38as5MmVDeauXDuOdH3+xZt6ieXldRzA
+      4w8zNTGCVFMm7G6skM6XiPaOMNz3+dj+z5d12dvZxrAcSplDIsPTDCVDNevXi2nuPljCsB18
+      Xj+3bl8/jl15vv71J8toXtg6yBOO9DB7YaTuswKTT+7cRdVURqcvEwtqNeuvFg85LDhsrS4h
+      e4PcuvVK3frB4cHdu8iKRGxolsFE4Fjm83IL+5s82s6gF3JE+wa4MjeNVFMmrD1ZpGo5BCNJ
+      RgZ7G9yTw8L9TyjkTYZmrzL8mV2Mz5fVC2kePNnEtTsVC+Q6IMHubuOME8FEkp0nC8zPzyN5
+      Gi+p2UaZlbV1VpYec5BttIfZJZvN0Ts0SjygYVj1fROPN8jU9DRzFy+inXDsdzaTJxD2sfpo
+      kWy+8XbQXC5PLB4nHo+eGA80NDHFzIUpouHG0aIyNutbGa5cvQjOyZuPdN3AdQwWFx5Tr7Qs
+      K6R2VukZmiESOGljlAtISLIEJwwqNH8ARZbwBUJ41cZN0DR0msvJ4KJoASTZRK80TjjmOBam
+      aWOUcijf//73v9+M+FZim1V299O4tk1yYABPnUYgyTLFQpFE/zDjw43z59iWjmm7DI5N0RNt
+      NOMk43F1Flc2CSf76UtEqdfjV/MHLCxvcpDOMDMzRaOm6tVktrYPmZqbIRT0oyj1XqxEIhnn
+      yeIixYqJpMjEouGaslXNj2wW2UmlsSwTWfUS9Nf+EEQSSVy7wv7eIaZlEo4n8Sj1NJYJhUPY
+      NkzPzaLVKad4fCSiYWQFDFciHo00eAYOkuJndLQPveoSDDSIbZLAdVw0zcvk1GTdr7BeLuML
+      hZBlGV8gQMDXyAglqsUCqD56+3vxafVTz8uyTDgSxlW0zvQAkiTRNzDEzds38Tf4AqQ3NogO
+      T3C4u3WizNR+mt7+GMsPH1OuNvoC2KxvpwnI0DvYV7fxA+jlCrbjkkntsba50zDb9c7uIa+8
+      MsPBXgbNc8LI0jVwpSADiSB7m3sYDYoWDjP0T0yhSBL7u9sNxeYLFWZmp5DsIqurjXpXg4ef
+      /AndMjnMNu6t8vt7PFhZQ8/nG/aBhUyKe3c/5dHCE5QGjQ+ODGtgYACjVGgoU9U0VFnCMAys
+      Bj31EQ6ZfIXR0VGCvsaBhdVijvv3H1AuljvTA7g4rC49IZcvEUnEUeq0Qkl22d7cxDJNKqZD
+      LFr/NJVQKIBpQSweRtO8eOo2Qpu9rV1MwyBbqhCLx1DrOEjeYITengSjo6NEwyEkWa77BbSN
+      Clu7Bxh6BVnzE/Q3+lqpGNUMOV1iamocv6bVlRsIh9laeUww3sdgfy9ag8bl12SWltcYHp2k
+      tzeOWrcXUigV8sSSPYSj0YbDEI+mkknn8QYC9CTjdfX0+v3gOBjVPKo/QSRY//5tU2d/P0Ug
+      GicSDNSVKcsyy0tP6B8cJuD3oTY8e02imD1ge2cfXzhGoMHhI6rHQzadp3eorzPh0JVClljf
+      CIqex7BdtDrP3x9JcDmSaEpmIBQh0FT2Fg/XX73VlExJkprey9w3PEZfUyUBHHyBCOXiDgbD
+      DYdWtuOQ6Oljc2uH4cFXGouVVfp6Euzspbk812iTvUFmP4MhSbhqmLCv/oNL7+xgygpGpYJD
+      I6dRxqgU6OkfxG24wceiWCiRz+dxybOxscPtW1frPgPXNtna2iQcTTA80FunFIBNvpDFtRUO
+      02WSkfqRB5V8hly2iCXtdsYAyuUKhZxONB4leIITdF6pViqgaGh1v9JHOLZFpVLBHzh5Jd00
+      DCq63sSqu5crt69R0B18stmwZN/ENGFdp1QxT2gsEh5NwbZcPP5G96QSSyaJJZOAzcL8ckOp
+      gWCAkuGc5FcDCuNTF0nv75LsaXzuWjDRz+UrLo7q74wPEIsnCPlgbXmTStelXXQpl8tUKxVc
+      SWJvb7eub2EZOpWKfnTKpmuxf5CpK7VcKmEYOtWqQbWUpVhtPBMUifcwPNBHaq/xTNzh5jKL
+      69sUiyUavymbQjbH2to65XLzad8lWWrYA45dmOXSxYsk/C47+40SiTlsrK5imAalSiOvCkCi
+      p3+QvmS0Mz2A4tHI5atMTY+gduHyfiAQ4sLMDADFbA6b2gsyikcjlkgSjR8NA3O5+g3AHwjg
+      DwToHXDBNcgXDfCd/Ho9JzisqipTqVQJnbhjTaZ3cIR0OkMk2mjK1mZncwcbkGSVCzOTJ+oI
+      R4tZdsNjfCVsy0Tz+VhZfEwydh1fEwndOmAANsWiTk9PAsu0P7e62R1ISNI/LjpFEvXTojwr
+      8+waj9cf13++rI9Yw7SjBn/48BNUVcJQgowD9ZuK9HSS4qT3JNHTN0AkKLGTKpAIJuuUk+nt
+      TfJkeQ3Z40Vu4C8YlRKpdBYAVVWINxjXg8T41Ayl7AGDNycaNn6zUuDh0hqOI3XCABQCfpkn
+      K2ls26Ssm8zNTJ74eAWtREJWFDyaglm1salvALHhKV4bbk5qameD/YLFjWvjDesuHuySyZcJ
+      Bt2GdXu8fvr7NSzLRlbUE6aXHVYfLxCORyjvZoleqD8lYZsGDjK2Ue3QpnjXRVE1PBIYhl53
+      CCBoFwojo8NUDYupwUFasx3fJlMwmR4KsrKZZWq0fm8V6unnUjjBfirT8L1LsszywwfsZ/IE
+      Q1Fu3mgUli/T05dAUUN4I42dYC0YIRrIYPn8nWl3qjeIbFQIDw0y1NuhudiuRiIWT5BNbXKY
+      0xnuacUbkFEkk+39PGW9hDEUqTvD9eTBp+TVEG65gj010XAmJhxP4A34qdon6eiQz2epVvJE
+      bR89DfyQSu4ASw0y1NMhJ9go58kcFnH8aZI9/S36Agmaw8VxbPZ2djAdicHeF09+XBuZy9eu
+      N1VyfPYyuwcHBEdGaeSCO47J44ePGBgbpVQunyBVYXrmCplCFa8iNRxaeUNRONhkb884nXDo
+      57Etg53tHSQtyFB/T8NwBEGrcSmXS+xv72K6LuVilcs3rzVsiK2msLdOyglR3dtg+sb1uh9A
+      13VJH6QolisMDI3gbTJN/5OHjxi7NNfEPbmdWQdwbYP1jR0cU8c+ffvrciQCgRAT09PMzMzw
+      yo2rpz4M8EXiVDK7ON7GY3BJkjhM7RNLJHi08Khp+V5v871ah9YBAly/cQ2QENkBO0sntlku
+      P5ynooawSzksaDgEjsdj7GxvE46dlEXbYeHT++DRGBgZb/j1rxYyLK5u49W8HeoBHJPFT+dJ
+      F3JYjugBuo2xmUtcnpvhK1+93bDxO47Jw/lFFFkmk06fKLfQ7KlErkmxVAU61ANYRpXMQZqy
+      IpFM9tH00QOCc4E/3Nyh6ZKkcuWVV4jEoignBCUWCkXGJybQLbtBFCyAjaOEmJ0eB+ROGIBD
+      KpVh4MIIrqviOSEYTNC9SJJEsrenqbKhUBgJF1k3TzAACVmWMPQqjit3YggkEQl7kbUIftmm
+      anVbMJygHUiSw/LS6lOfppFfI2OXs2TLNn5/R6JBJULxfvyKjqUFCHpEDyBoDdVKiVQqRdVo
+      HOItyRK5zCEHB+nO+ACSJJNMJLFkrQuD4QTtQcL3dCukZZq4+Ov2A0dbLWXA7cxCmFHOsLiW
+      RjVLjF66QvAFzyEWCBqxvLDI6MXZs7sQpmoBFLeKpXrxCidY0Gpe4JvekSGQY5sEoz2MnZDq
+      RCBolkIuQ+lpPqDE0FCDhu2Q2ks9jUDoyCwQSIrKwdYa9x8sYDTc5SMQNIc/GEKRXKpVHVXz
+      NpgHkojGY0SjUaLRcGd6ANvUyabyjPQkG2aFEAiaRVUltjdXwfVgEGR2ot76gYRVzvHbDz/F
+      H492yAfw+IjFA2QLFXzCBxC0BIXxCxeJRIP09TbeEOPRfFyYGUdTOxQLZJs6SjBMIhhomG1N
+      IGiWSjHDvXsPkWSH/YbZI0Cv6sT6hhlNRjq1GculUCyiaV7cp0lVBYIvg+YLMjE2hOLzMzbQ
+      OHziILXL2l6WSKK/U9GgNsFQjESDtIgCwYugqCrZXA7VKbCyWT9/EkB/fz+9AyMoRrkTBuCi
+      eEMkon7K5QoiGlrQGmRCAS+ZXJVYtPGBjB5/ENcsI3k7EgvksruXIpFIUC1kMbouM5ygHVRL
+      Wbb3sgT8CgeHjc6HOEq7Pjg2RW+oI1khZAb6e9nZ3kXxB0/MjSkQNIOq+ZmYGCMWj554JG9q
+      b5dUZYdoJNKJWCCb1aVlKobB1uYeb77zZwS6NEGuoPN0pAfQvB4MV+L1t74mGr+go/x/4d8R
+      CkGzwxoAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
