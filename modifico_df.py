@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing, svm
 from sklearn.metrics import accuracy_score
+import numpy as np
+from sklearn.decomposition import PCA  
 #%matplotlib inline
 
 
@@ -127,3 +129,73 @@ for k in lista:
 
 # Better accuracy but still far from acceptables values 
 
+# I will try, as suggested, with PCA. Let's see what are the results.
+
+def plot_corr(df,size=10):
+    '''Function plots a graphical correlation matrix for each pair of columns in the dataframe.
+
+    Input:
+    df: pandas DataFrame
+    size: vertical and horizontal size of the plot'''
+
+    corr = df.corr()
+    fig, ax = plt.subplots(figsize=(size, size))
+    ax.matshow(corr)
+    plt.xticks(range(len(corr.columns)), corr.columns);
+    plt.yticks(range(len(corr.columns)), corr.columns);
+    for tick in ax.get_xticklabels():
+        tick.set_rotation(90)
+        
+columnas_sin_pct = ["PJ", "PG", "PP", "PF", "PC", "total_min", "total_val", "total_puntos", "total_min_espana","total_puntos_espana", "total_val_espana", "total_jug", "jug_esp",\
+       "jug1", "jug3", "jug5", "mas5", \
+       "total_min_no_esp", "total_puntos_no_esp",\
+       "total_val_no_esp"]
+otro_df = df[columnas_sin_pct]
+
+plot_corr(df)
+plot_corr(otro_df) 
+
+#deleting percentages because it is usual that have high correlation in fact this is a calculation from the original number
+
+
+# we'll try to use PCA to obtain better results.
+
+valores2 = ["PF", "PC", "total_val","porcentaje_jug_esp",\
+       "porcentaje_jug_1", "porcentaje_jug_3", "porcentaje_jug_5",\
+       "porcentaje_jug_mas5", "porcentaje_min_esp", "porcentaje_val_esp"\
+       ]
+
+# A first View
+import numpy as np
+from sklearn.decomposition import PCA  
+DATA = df[valores2].values
+my_model = PCA(n_components=4)
+my_model.fit_transform(DATA)
+
+print df[valores2].columns
+print my_model.explained_variance_
+print my_model.explained_variance_ratio_
+print my_model.explained_variance_ratio_.cumsum()
+
+# Let's try to identify the best approach n_components
+lista_valores_PCA = []
+def genero_PCA(componentes):
+    my_model = PCA(n_components=componentes)
+    my_model.fit_transform(DATA)
+    valores = np.insert(my_model.explained_variance_ratio_.cumsum(),0,0)
+    return valores
+lista_comp =[0]
+plt.figure()
+pos_H = 0
+pos_V = 0
+for x in range(1,10):
+    componentes = x
+    lista_comp.append(x)
+    y = genero_PCA(componentes)
+    plt.subplot2grid((3, 3), (pos_H, pos_V))
+    plt.plot(lista_comp,y)
+    if x%3 ==0 :
+        pos_V = 0
+        pos_H = pos_H + 1
+    else:
+        pos_V = x%3
