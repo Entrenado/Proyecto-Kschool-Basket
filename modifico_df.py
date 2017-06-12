@@ -168,7 +168,7 @@ valores2 = ["PF", "PC", "total_val","porcentaje_jug_esp",\
 # A first View
 import numpy as np
 from sklearn.decomposition import PCA  
-DATA = df[valores2].values
+DATA = df_numerico[valores2].values
 my_model = PCA(n_components=4)
 my_model.fit_transform(DATA)
 
@@ -199,3 +199,11 @@ for x in range(1,10):
         pos_H = pos_H + 1
     else:
         pos_V = x%3
+plt.show()        
+valores_PCA = my_model.fit_transform(DATA)
+result_PCA = sm.OLS(df_numerico["puesto"], valores_PCA).fit()
+print result_PCA.summary()
+
+# We remove the multicollinearity but the R squared is still very low. 
+
+# Next step Random Forest.
