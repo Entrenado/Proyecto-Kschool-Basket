@@ -12,7 +12,11 @@ from sklearn.model_selection import train_test_split
 from sklearn import preprocessing, svm
 from sklearn.metrics import accuracy_score
 import numpy as np
-from sklearn.decomposition import PCA  
+from sklearn.decomposition import PCA
+from sklearn.ensemble import RandomForestClassifier  
+from sklearn.cross_validation import cross_val_score
+from sklearn import grid_search
+
 #%matplotlib inline
 
 
@@ -207,3 +211,15 @@ print result_PCA.summary()
 # We remove the multicollinearity but the R squared is still very low. 
 
 # Next step Random Forest.
+
+clf = RandomForestClassifier(n_jobs=700)
+clf.fit(X_train, y_train)
+clf.feature_importances_
+importance_sum = sum(clf.feature_importances_)
+feat_imp_perct =  [100*(x/importance_sum) for x in clf.feature_importances_]
+param_grid = {
+                 'n_estimators': [50, 100, 150, 200],
+                 'max_depth': [3, 4, 6, 7]
+             }
+grid_clf = grid_search.GridSearchCV(clf, param_grid, cv=10)
+grid_clf.fit(X_train, y_train)
