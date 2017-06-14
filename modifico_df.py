@@ -6,15 +6,16 @@
 import pandas as pd
 import os
 import statsmodels.formula.api as sm
-import seaborn as sns
+import seaborn as sns 
+from sklearn.ensemble import RandomForestClassifier  
+from sklearn.cross_validation import cross_val_score
+
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing, svm
 from sklearn.metrics import accuracy_score
 import numpy as np
 from sklearn.decomposition import PCA
-from sklearn.ensemble import RandomForestClassifier  
-from sklearn.cross_validation import cross_val_score
 from sklearn import grid_search
 
 #%matplotlib inline
@@ -59,14 +60,20 @@ correlaciones[jugadores]
 sns.boxplot(data=df[jugadores])
 correlaciones[(correlaciones <= -0.5) & (correlaciones >= 0.5) & (correlaciones != 1)] #comprobamos si las correlaciones son mayores que 0,5
 sns.boxplot(data = df)
+print 'RESULTADOS  REGRESION LINEAL' 
 
+print ' -------------------------------------------------------------------------------------------------------------------------------------------'
 result = sm.ols(formula="puesto ~ jug_esp + jug1 +jug3 + jug5 + mas5 + total_min_espana + total_min_no_esp + total_puntos + total_puntos_espana + total_puntos_no_esp", data=df).fit()
 print result.params
-result.summary()
+print result.summary()
 result2 = sm.ols(formula="puesto ~ jug_esp + jug1 +jug3 + jug5 + mas5 + total_min_espana + total_min_no_esp + total_puntos + total_puntos_espana + total_puntos_no_esp", data=df).fit()
 df.to_csv("D:\\Master\\ProyectoBasket\\Proyecto-Kschool-Basket\\temporadas_totalizado.csv", index=False)
 result3 = sm.ols(formula="puesto ~ jug1 +jug3 + jug5 + porcentaje_jug_esp + porcentaje_min_esp", data=df).fit()
-result3.summary()
+print result3.summary()
+##  
+
+print ' -------------------------------------------------------------------------------------------------------------------------------------------'
+
 #
 # It seems that ther regression doesn't work we'll try to build a classification method. Though the position are numbers we can understand it like categories with values from 1 to 26. 
 #
@@ -101,6 +108,10 @@ lin_svc = svm.LinearSVC(C=C).fit(X_train, y_train)
 lista = [svc, rbf_svc,poly_svc,lin_svc]
 listado = ["svc", "rbf_svc","poly_svc","lin_svc"]
 contador = 0
+print 'RESULTADOS  Accuracy SVM' 
+
+print ' -------------------------------------------------------------------------------------------------------------------------------------------'
+
 for k in lista:
     clf_svm = k
     clf_svm.fit(X_train, y_train)
@@ -130,6 +141,8 @@ for k in lista:
     acc_svm = accuracy_score(y_test, y_pred_svm)
     print "accuracy %s: "%listado[contador],acc_svm
     contador = contador +1
+print ' -------------------------------------------------------------------------------------------------------------------------------------------'
+
 
 # Better accuracy but still far from acceptables values 
 
@@ -203,10 +216,16 @@ for x in range(1,10):
         pos_H = pos_H + 1
     else:
         pos_V = x%3
-plt.show()        
+plt.show()  
+
+print "VALORES REGRESION LINEAL tras PCA"
+print ' -------------------------------------------------------------------------------------------------------------------------------------------'
+      
 valores_PCA = my_model.fit_transform(DATA)
 result_PCA = sm.OLS(df_numerico["puesto"], valores_PCA).fit()
 print result_PCA.summary()
+
+print ' -------------------------------------------------------------------------------------------------------------------------------------------'
 
 # We remove the multicollinearity but the R squared is still very low. 
 
@@ -242,3 +261,11 @@ PredOutputs = best_clf.predict(X_train)
 score = metrics.f1_score(y_test, pred,average='micro', pos_label=list(set(y_test)))
 # training score
 score_train = metrics.f1_score(y_train, PredOutputs ,average='micro', pos_label=list(set(y_train)))
+
+print 'RESULTADOS RANDOM FOREST'
+print ' -------------------------------------------------------------------------------------------------------------------------------------------'
+
+print "f1 score with test data:", score
+print "f1 score with train data:", score_train
+
+print ' -------------------------------------------------------------------------------------------------------------------------------------------'
