@@ -245,6 +245,7 @@ grid_clf.fit(X_train, y_train)
 grid_clf. best_estimator_
 grid_clf. best_params_
 grid_clf. grid_scores_
+print grid_clf. best_estimator_
 best_clf = RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini', \
             max_depth=4, max_features='auto', max_leaf_nodes=None,\
             min_impurity_split=1e-07, min_samples_leaf=1,\
@@ -269,3 +270,40 @@ print "f1 score with test data:", score
 print "f1 score with train data:", score_train
 
 print ' -------------------------------------------------------------------------------------------------------------------------------------------'
+
+# lo que vamos a hacer es bajar la sensibilidad del ajuste. Es decir no queremos saber el puesto exacto si no si jugará playoff, descenderá o quedará en medio
+
+def puesto(x):
+    if x <= 8: x= "playoff"
+    elif x >8 and x <=16: x="sin_playoff"
+    else: x = "descenso"
+    return x
+    
+df_numerico["sub_puesto"] = df_numerico["puesto"].apply(lambda x: puesto(x))
+
+X_train, X_test, y_train, y_test = train_test_split(df_numerico[valores2],df_numerico["sub_puesto"],test_size=0.2,random_state=0)
+best_clf = RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini', \
+            max_depth=4, max_features='auto', max_leaf_nodes=None,\
+            min_impurity_split=1e-07, min_samples_leaf=1,\
+            min_samples_split=2, min_weight_fraction_leaf=0.0,\
+            n_estimators=50, n_jobs=700, oob_score=False,\
+            random_state=None, verbose=0, warm_start=False)
+best_clf.fit(X_train, y_train)
+pred = best_clf.predict(X_test)
+from sklearn import metrics
+# testing score
+pred = best_clf.predict(X_test)
+PredOutputs = best_clf.predict(X_train)
+# testing score
+score = metrics.f1_score(y_test, pred,average='micro', pos_label=list(set(y_test)))
+# training score
+score_train = metrics.f1_score(y_train, PredOutputs ,average='micro', pos_label=list(set(y_train)))
+
+print 'RESULTADOS RANDOM FOREST con baja sensibilidad'
+print ' -------------------------------------------------------------------------------------------------------------------------------------------'
+
+print "f1 score with test data:", score
+print "f1 score with train data:", score_train
+
+print ' -------------------------------------------------------------------------------------------------------------------------------------------'
+
