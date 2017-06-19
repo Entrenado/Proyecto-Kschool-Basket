@@ -9,7 +9,6 @@ import statsmodels.formula.api as sm
 import seaborn as sns 
 from sklearn.ensemble import RandomForestClassifier  
 from sklearn.cross_validation import cross_val_score
-
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing, svm
@@ -17,7 +16,8 @@ from sklearn.metrics import accuracy_score
 import numpy as np
 from sklearn.decomposition import PCA
 from sklearn import grid_search
-
+from sklearn.metrics import confusion_matrix
+import pylab as pl
 #%matplotlib inline
 
 
@@ -252,6 +252,14 @@ pred = best_clf.predict(X_test)
 from sklearn import metrics
 # testing score
 pred = best_clf.predict(X_test)
+clf.feature_importances_
+importance_sum = sum(clf.feature_importances_)
+feat_imp_perct =  [100*(x/importance_sum) for x in clf.feature_importances_]
+importances = pd.DataFrame({'feature':X_train.columns,'importance':np.round(clf.feature_importances_,3)})
+importances = importances.sort_values('importance',ascending=False).set_index('feature')
+print importances
+importances.plot.bar()
+
 PredOutputs = best_clf.predict(X_train)
 # testing score
 score = metrics.f1_score(y_test, pred,average='micro', pos_label=list(set(y_test)))
@@ -302,3 +310,25 @@ print "f1 score with train data:", score_train
 
 print ' -------------------------------------------------------------------------------------------------------------------------------------------'
 
+labels = ['playoff', 'clasificacion', 'descenso']
+cm = confusion_matrix(y_train.sample(98), y_test, labels)
+print(cm)
+def plot_confusion_matrix(cm, target_names, title='Confusion matrix', cmap=plt.cm.Reds):
+    plt.imshow(cm, interpolation='nearest', cmap=cmap)
+    plt.title(title)
+    plt.colorbar()
+    tick_marks = np.arange(len(target_names))
+    plt.xticks(tick_marks, target_names, rotation=90)
+    plt.yticks(tick_marks, target_names)
+    plt.tight_layout()
+    width, height = cm.shape
+    for x in xrange(width):
+        for y in xrange(height):
+            plt.annotate(str(cm[x][y]), xy=(y, x), 
+                        horizontalalignment='center',
+                        verticalalignment='center')
+    plt.ylabel('Y train sample label')
+    plt.xlabel('Y test label')
+
+plot_confusion_matrix(cm, labels)
+plt.show()  
