@@ -332,3 +332,9 @@ def plot_confusion_matrix(cm, target_names, title='Confusion matrix', cmap=plt.c
 
 plot_confusion_matrix(cm, labels)
 plt.show()  
+
+importances = pd.DataFrame({'feature':X_train.columns,'importance':np.round(best_clf.feature_importances_,3)})
+importances = importances.sort_values('importance',ascending=False).set_index('feature')
+print importances
+importances.plot.bar()
+

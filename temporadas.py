@@ -198,4 +198,4 @@ def recorro_temporadas(lista_temporadas):
         
 listado =recorro_temporadas(lista_temporadas)
 #print listado
-listado.to_csv("D:\\Master\\ProyectoBasket\\Proyecto-Kschool-Basket\\temporadas.csv", index=False)
+listado.to_csv("D:\\Master\\ProyectoBasket\\Proyecto-Kschool-Basket\\temporadas_prueba.csv", index=False)
